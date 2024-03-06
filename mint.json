@@ -2,60 +2,99 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#257BA7",
+    "light": "#31B8C5",
+    "dark": "#257BA7",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#257BA7",
+      "to": "#257BA7"
     }
   },
+  "metadata": {
+    "og:locale": "en_US"
+  },
+  "api": {
+    "baseUrl": "https://api-ezyconnect.ezytail.com",
+    "auth": {
+      "method": "bearer",
+      "inputPrefix": "Bearer",
+      "name": "Authorization"
+    },
+    "playground": {
+      "mode": "simple"
+    }
+  },
+  "openapi": "https://api-ezyconnect.ezytail.com/swagger/v1/swagger.yaml",
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@ezytail.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "EzyLive",
+    "url": "https://ezymanager.ezytail.com"
   },
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "english/api-reference"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Join our Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/6fa55BVC",
+      "version": "English"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Follow us",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/ezytail",
+      "version": "English"
+    },
+    {
+      "name": "Rejoignez notre Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/6fa55BVC",
+      "version": "Français"
+    },
+    {
+      "name": "Suivez-nous",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/ezytail",
+      "version": "Français"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.ezytail.com/blog-actualites"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+        "english/introduction",
+        "english/quickstart",
+        "english/development"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Démarrez",
+      "pages": [
+        "french/introduction",
+        "french/quickstart",
+        "french/development"
+      ],
+      "version": "Français"
     },
     {
       "group": "Essentials",
@@ -71,15 +110,46 @@
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
+        "english/api-reference/introduction",
+        "english/api-reference/changelog"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Articles",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "english/api-reference/articles/get-all-article-movements",
+        "english/api-reference/articles/get-all-articles-stock",
+        "english/api-reference/articles/get-all-articles",
+        "english/api-reference/articles/get-all-movements-for-a-specific-article",
+        "english/api-reference/articles/push-new-articles"
+      ]
+    },
+    {
+      "group": "Orders",
+      "pages": [
+        "english/api-reference/orders/attach-a-document-to-an-order",
+        "english/api-reference/orders/get-all-order-reports",
+        "english/api-reference/orders/get-all-orders",
+        "english/api-reference/orders/get-specific-order-reports",
+        "english/api-reference/orders/push-new-orders"
+      ]
+    },
+    {
+      "group": "Procurement",
+      "pages": [
+        "english/api-reference/procurements/get-all-procurement-reports",
+        "english/api-reference/procurements/get-all-procurements",
+        "english/api-reference/procurements/get-specific-procurement-reports",
+        "english/api-reference/procurements/push-new-procurements"
+      ]
+    },
+    {
+      "group": "Shipping",
+      "pages": [
+        "english/api-reference/shipping/create-a-shipping-label",
+        "english/api-reference/shipping/get-a-label-by-id-and-carrier",
+        "english/api-reference/shipping/get-the-tracking-package-by-id-and-carrier",
+        "english/api-reference/suppliers/push-new-suppliers"
       ]
     }
   ],
@@ -87,5 +157,9 @@
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  },
+  "versions": [
+    "Français",
+    "English"
+  ]
 }
